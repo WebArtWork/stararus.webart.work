@@ -23,8 +23,8 @@ Live site: https://stararus.webart.work
 - Website `https://stararus.business.site` не опубліковано: Google закрив Business Profile websites (*.business.site) у 2024 році, посилання, найімовірніше, не працює.
 - Google Maps: `https://maps.google.com/?cid=6104310521932301133`
 
-## Booking flow
-Дві вимкнені форми: «Проживання» (заїзд, виїзд, гості, додатково ресторан/конференц-зал, ім’я, телефон) і «Плануєте зустріч?» (дата, учасники, тривалість, проживання Так/Ні, харчування Так/Ні, телефон). Бекенду й email немає — поруч телефон і адреса.
+## Forms
+Live HotelOS forms (`kp-stararus`, script before `</body>`): `stay-request` (section before the final CTA, also holds `#contacts`) and `conference-request` (right after `#meet`). They replace the earlier Telegram-endpoint forms.
 
 ## Photos
 `photos_source: stock (Pexels, free license)` — ілюстративні фото (не самого закладу), додані до карток Stay/Dine/Meet у hero, секцій Stay, Dine (ресторан і бар), Outside (тераса) і Meet. Кожне зображення має alt з позначкою «ілюстративне фото». Файли — в `img/`. Hero лишається типографічним у подвійній рамці.
